@@ -9,7 +9,7 @@ library(tidyverse)
 ### Usamos el comando suppressWarnigns para que no los salgan avisos de potenciales NA
 ### a lo largo del trabajo eliminamos los potenciales NA
 gapminder <- suppressWarnings(
-  read_csv("C:/Users/alepa/OneDrive/Escritorio/Valentin/LAB/TP R/gapminder.csv") ### Leemos el dataset
+  read_csv("gapminder.csv") ### Leemos el dataset
 )
 View(gapminder) ### Chequeamos que la lectura del dataset se haya realizado de manera correcta 
 
@@ -293,6 +293,7 @@ modelo_vida_corregido_2 <- lm(life_expectancy ~  child_mortality + life_expectan
                             data = gapminder_2010)
 ### Mostramos los resultados de la regresión
 summary(modelo_vida_corregido_2)
+
 
 
 
